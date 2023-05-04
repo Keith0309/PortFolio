@@ -1,0 +1,410 @@
+body{
+  font-family: 'Montserrat';
+}
+.main-home{ 
+  text-align: center;
+  margin-top: 61px;
+  height: 100dvh;
+  background-image: url(../IMG/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  /*filter: blur(6px);
+  -webkit-filter: blur(6px);
+  /*background-image: linear-gradient(to right, #ffa500 , #ffdd69);*/
+}
+.main-text{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 6px solid #f1f1f1;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 70%;
+  text-align: center;
+}
+.home-content{
+  font-size: 4rem;
+}
+
+.home-content2{
+  font-size: 30px;
+  width: 58%;
+  /* DEMO-SPECIFIC STYLES */
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .20em solid #ffa500; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 5s steps(30, end),
+    blink-caret 0.5s step-end infinite;
+  animation-fill-mode: forwards;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 58% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #ffa500 }
+}
+.logo-text{
+  font-weight: bolder;
+  padding-left: 7%;
+  
+}
+.navbar-brand{
+  color: #ffa500 !important;
+}
+.nav{
+  margin-right: 7%;
+}
+.nav-link{
+  color: #ffa500 !important;
+  font-weight: bold !important;
+}
+.active, .nav-link:hover {
+  border-radius: 15px;
+  background-color: #ffa500 !important;
+  color: #ffffff !important;
+}
+.id{
+  box-shadow: 0 0 5px #ffa500;
+}
+.progress, .progress-stacked {
+  --bs-progress-bar-bg: #ffa500 !important;
+  padding: 0 !important;
+}
+.container-about{
+  box-shadow: 0 0 5px #ffa500;
+}
+.border-color{
+  border-bottom: 4px solid #ffa500;
+}
+.portfolio{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url(../IMG/work-bg.jpg);
+}
+.portfolio2{
+  background-color: #ffa500; /* Fallback color */
+  background-color: rgba(255,165,0, 0.7); /* Black w/opacity/see-through */
+}
+.contact{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url(../IMG/contact-bg.jpg);
+  
+}
+.contact2{
+  background-color: #ffa500; /* Fallback color */
+  background-color: rgba(255,165,0, 0.7); /* Black w/opacity/see-through */
+  padding: 5% 0;
+}
+.send-btn{
+  background-color: #ffa500;
+}
+.send-btn:hover{
+  opacity: 0.9;
+  color: #ffffff;
+}
+.i{
+  color: #ffa500 !important;
+}
+.i:hover{
+  opacity: 0.5;
+}
+.work-img:hover{
+  transform: scale(1.1);
+}
+.work-img{
+  cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+  .home-content{
+    font-size: 3rem;
+  }
+  .home-content31 {
+    overflow: hidden;
+    border-right: .15em solid #00aeff;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end 5;
+  }
+  
+  .home-content32 {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #00aeff;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end 5, slidein 1s ease 3.5s forwards;
+    animation-delay: 3.5s;
+  }
+  
+  
+  /* The typing effect */
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+    to {
+      width: 40%
+    }
+  }
+  
+  @keyframes slidein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  
+  /* The typewriter cursor effect */
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: #00aeff
+    }
+    50% {
+      border-color: transparent;
+    }
+  }
+}
+
+/*.navbar {
+    overflow: hidden;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    border-bottom: 2px solid #ffa500;
+  }
+.left {
+  display: flex;
+  width: 60%;
+}
+.right {
+  display: flex;
+  background-color: #ffffff;
+  width: 40%;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #dfdfdf;
+}
+.icon{
+    padding-left: 250px;
+  }
+.header{
+  font-family: Segoe Print;
+  color: #ffa500;
+  margin-top: 0;
+
+}
+.nav-link{
+  font-family: Segoe Print;
+  font-size: 30px;
+  margin-left: 20px;
+  margin-top: 5px;
+  color: #ffa500;
+  text-decoration: none;
+  font-weight: bolder;
+}
+.active, .nav-link:hover{
+  border-bottom: 3px solid #ffa500;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px;
+}
+.home{
+  text-align: center;
+  margin-top: 61px;
+  height: 900px;
+  background-image: linear-gradient(to right, #ffa500 , #ffdd69);*/
+  /*background-image: url(mainBG.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;*/
+/*}
+.home-content{
+  font-family: Segoe Print;
+  font-size: 100px;
+  font-weight: bolder;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 3px;
+  color: #ffffff;
+  padding-top: 300px;
+  
+}
+span{
+  font-size: 50px;
+  font-weight: bolder;
+  color: #ffffff;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px;
+}
+.home-content2{
+  font-size: 40px;
+  font-weight: bolder;
+  color: #ffffff;
+  
+}
+#about{
+  padding-top: 20px;
+}
+.about{
+  background-color: #ffffff;
+  width: 70%;
+  height: 700px;
+  margin:5% 15% 5% 15%;
+  box-shadow: 0 0 5px #ffa500;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.about-left{
+  width: 44%;
+  height: 620px;
+  padding: 40px;
+  
+}
+.about-right{
+  width: 44%;
+  height: 620px;
+  padding: 40px;
+}
+.image-text{
+  display: flex;
+}
+
+.id-details{
+  font-size: 20px;
+  padding-left: 30px;
+}
+
+progress{
+  width: 100%;
+  height: 30px;
+  accent-color: #ffa500;
+}
+.about-me{
+  font-size: 25px;
+  padding-top: 20px;
+}
+.main-portfolio{
+  padding-top: 30px;
+}
+.portfolio{
+  width: 70%;
+  height: 600px;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.p-h1{
+  font-size: 50px;
+}
+.p-p{
+  font-size: 20px;
+  font-weight: bold;
+}
+.my-project{
+  display: flex;
+}
+/*.p-box{
+  width: 33.33%;
+  height: 400px;
+  margin: 20px;
+  box-shadow: 0 0 5px #ffa500;
+  background-color: #ffffff;
+}*/
+/*.project-img{
+  width: 32.5%;
+  object-fit: contain;
+  padding: 10px;
+  box-shadow: 0 0 10px #ffa500;
+}
+.project-img:hover{
+  transform: scale(1.3)
+}
+.contact-container{
+  height: 800px;
+  background-image: linear-gradient(to left, #ffa500 , #ffdd69);
+  padding-top: 100px;
+}
+.contact{
+  background-color: #ffffff;
+  margin: auto;
+  width: 70%;
+  height: 700px;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.contact-left{
+  width: 44%;
+  height: 620px;
+  padding: 40px;
+  
+}
+.contact-right{
+  width: 44%;
+  height: 620px;
+  padding: 40px;
+}
+input{
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+textarea{
+  font-size: 20px;
+  width: 100%;
+  height: 150px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.send{
+  margin-top: 20px;
+  width: 200px;
+  height: 60px;
+  border-radius: 30px;
+  border: none;
+  background-color: #ffa500;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.send:hover{
+  background-color: #ffffff;
+  border: 2px solid #ffdd69;
+  color: #ffa500;
+}
+.contact-me{
+  font-size: 25px;
+  padding-top: 20px;
+}
+.social:hover{
+  opacity: 0.5;
+}*/
